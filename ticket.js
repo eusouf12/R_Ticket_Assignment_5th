@@ -94,14 +94,15 @@ const coupneBtn = document.getElementById('coupon-btn').addEventListener('click'
            hideBtn.classList.add('hidden');
            //    discount-div 
            const disPrise = document.getElementById('discount-price'); 
-           disPrise.innerText = total_price * 0.15;
+           const disP = total_price * 0.20;
+           disPrise.innerText = disP;
            
            const disDiv = document.getElementById('discount-div');
            disDiv.classList.add('block');
            disDiv.classList.remove('hidden');
 
            const grandTotal = document.getElementById('grand-total');
-           grand_total = total_price - dis_price;
+           grand_total = total_price - disP;
            grandTotal.innerText = grand_total;
         }
         else if(element == 'Couple 20')
@@ -110,14 +111,15 @@ const coupneBtn = document.getElementById('coupon-btn').addEventListener('click'
            hideBtn.classList.add('hidden');
            //    discount-div 
            const disPrise = document.getElementById('discount-price'); 
-           disPrise.innerText = total_price * 0.20;
+           const disP = total_price * 0.20;
+           disPrise.innerText = disP;
            
            const disDiv = document.getElementById('discount-div');
            disDiv.classList.add('block');
            disDiv.classList.remove('hidden');
 
            const grandTotal = document.getElementById('grand-total');
-           grand_total = total_price - dis_price;
+           grand_total = total_price - disP;
            grandTotal.innerText = grand_total;
         }
         else
