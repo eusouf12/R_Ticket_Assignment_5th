@@ -94,7 +94,7 @@ const coupneBtn = document.getElementById('coupon-btn').addEventListener('click'
            hideBtn.classList.add('hidden');
            //    discount-div 
            const disPrise = document.getElementById('discount-price'); 
-           const disP = total_price * 0.20;
+           const disP = total_price * 0.15;
            disPrise.innerText = disP;
            
            const disDiv = document.getElementById('discount-div');
